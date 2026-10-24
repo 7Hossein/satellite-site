@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#0b1120">
+    <meta name="description"
+          content="مرجع فرکانس ماهواره‌ها و اطلاعات شبکه‌های تلویزیونی">
+
+    <title>SAT | فرکانس ماهواره‌ها</title>
+
+    <link rel="stylesheet" href="Satsat.css">
+    <script src="satsat.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+    <a href="#" class="logo">
+        <span class="logo-icon">📡</span>
+        <span>SAT<span class="logo-blue">INFO</span></span>
+    </a>
+
+    <span class="header-label">Satellite Frequency Guide</span>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <span class="hero-badge">SATELLITE DATABASE</span>
+
+        <h1>فرکانس ماهواره‌ها</h1>
+
+        <p>
+            فرکانس‌ها و اطلاعات شبکه‌های تلویزیونی را جست‌وجو کن.
+        </p>
+
+        <form class="search-box" id="searchForm">
+            <input
+                type="search"
+                id="search"
+                placeholder="نام ماهواره، فرکانس یا شبکه..."
+                autocomplete="off"
+                aria-label="جست‌وجوی ماهواره، فرکانس یا شبکه"
+            >
+
+            <button type="submit" aria-label="جست‌وجو">
+                🔍 جست‌وجو
+            </button>
+        </form>
+
+        <button type="button" id="clearSearch" class="clear-button" hidden>
+            پاک کردن جست‌وجو ✕
+        </button>
+    </section>
+
+    <section class="stats">
+        <div class="stat-card">
+            <span class="stat-icon">🛰️</span>
+            <div>
+                <strong id="satelliteCount">6</strong>
+                <span>ماهواره</span>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-icon">📶</span>
+            <div>
+                <strong id="frequencyCount">0</strong>
+                <span>فرکانس ثبت‌شده</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="frequency-section">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">FREQUENCY LIST</span>
+                <h2>لیست ماهواره‌ها</h2>
+            </div>
+
+            <span class="live-badge">
+                <span class="live-dot"></span>
+                اطلاعات ثبت‌شده
+            </span>
+        </div>
+
+        <div id="result" class="result" role="status" aria-live="polite">
+            ماهواره موردنظر خود را انتخاب کن.
+        </div>
+
+        <div class="satellite-list">
+
+            <!-- BADR -->
+            <details class="sat-card" open>
+                <summary>
+                    <span class="sat-icon">🛰️</span>
+                    <span class="sat-name">
+                        <strong>Badr 26°E</strong>
+                        <small>بدر | عرب‌ست</small>
+                    </span>
+                    <span class="sat-position">26°E</span>
+                    <span class="arrow">⌄</span>
+                </summary>
+
+                <div class="frequency-list">
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">12965 H 30000</div>
+                        <p>International</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11881 H 27500</div>
+                        <p>IRIB 1, 2, 3, 4 · IRINN · Amoozesh · Salamat</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11900 H 27500</div>
+                        <p>IRINN · Amoozesh · Quran · Namayesh · Varzesh · HD · iFilm · Press TV</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11270 V 27500</div>
+                        <p>MBC 1 · MBC 2 · MBC 3</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">12303 H 32000</div>
+                        <p>IRINN · Yazd · Khorasan · Aftab · Kerman · Ilam · Kordestan · Jame Jam</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">12283 V 30000</div>
+                        <p>IRINN · Jame Jam · Sahar Balkan · Sahar Azari · iFilm 2 · iFilm English</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11785 V 27500</div>
+                        <p>Iran International</p>
+                    </article>
+
+                </div>
+            </details>
+
+            <!-- YAHSAT -->
+            <details class="sat-card">
+                <summary>
+                    <span class="sat-icon">🛰️</span>
+                    <span class="sat-name">
+                        <strong>Yahsat 52.5°E</strong>
+                        <small>یاه‌ست</small>
+                    </span>
+                    <span class="sat-position">52.5°E</span>
+                    <span class="arrow">⌄</span>
+                </summary>
+
+                <div class="frequency-list">
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">10761 V 27500</div>
+                        <p>Mellig TV</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11419 V 27500</div>
+                        <p>Zed TV</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">10762 V 27500</div>
+                        <p>NET TV · BBC News Persian · DeJ TV · Persian Doc · Persian Sport</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11996 V 27500</div>
+                        <p>BBC · VOA · Iran International · Iran Farda · CNN · MBC Persia · GOD TV</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">12595 V 27500</div>
+                        <p>Azadi · Mohabat TV · Radio Javan · Hodh​​od TV</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">10887 V 27500</div>
+                        <p>Persians · Radio Javan · Varzesh TV2 · XOTV · 24Box · Pershiana 2 · Pershiana 5</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11766 V 27500</div>
+                        <p>Kanal Jadid · Didgah TV · Khaneh Honarmandan · Persians Music · Tapes TV · ITN · T2 · 30TV · Ruby Music · Toosheh TV · My TV · Khanefilm · ATV · Ganghozor · Tin TV · PN TV</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11881 V 27500</div>
+                        <p>GEM · RUBIX · RIVER · GEM TV</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11958 V 27500</div>
+                        <p>Kalame TV · Khatere · Iran B Marz · Iran Beauty · Komala TV · Tile TV · Ruby One</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">12015 H 27500</div>
+                        <p>TOLO HD · Lem​​at HD · TOLO News · Shamshad · 1TV HD · Tamadon · Noor TV · AMC · Afghan · Arezo TV</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">12034 V 27500</div>
+                        <p>ONYX HD · RUBIX HD · RIVER HD · 24B HD · GEM TV</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">12149 V 27500</div>
+                        <p>Golden TV · Interaz TV · City TV · Movie Time · Tapesh HD</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">10803 H 27500</div>
+                        <p>Persiana 1–5 · Varzesh 1–4 · Poker TV</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">10845 V 27500</div>
+                        <p>Persiana Junior · Persiana Cinema · Ava Series · 11TV · Zen TV · Asr TV · Oxir TV · Didar TV · Ava Family HD</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11785 H 27500</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">10877 V 27500</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">10846 V 27500</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11421 H 27500</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11977 H 27500</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11343 H 27500</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">12246 H 27500</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11843 V 27500</div>
+                        <p>International</p>
+                    </article>
+
+                </div>
+            </details>
+
+            <!-- EUTELSAT -->
+            <details class="sat-card">
+                <summary>
+                    <span class="sat-icon">🛰️</span>
+                    <span class="sat-name">
+                        <strong>Eutelsat 7°E</strong>
+                        <small>یوتل‌ست</small>
+                    </span>
+                    <span class="sat-position">7°E</span>
+                    <span class="arrow">⌄</span>
+                </summary>
+
+                <div class="frequency-list">
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11262 H 27500</div>
+                        <p>International</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">10721 H 22000</div>
+                        <p>BBC · Simaye Azadi · Manoto</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11304 H 22700</div>
+                        <p>Melody HD · Confirm HD · Cineastes HD · Iran International</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11221 H 27500</div>
+                        <p>PARS TV · Andisheh TV · Iran International · Kanal Yek · Iran Farda</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11345 H 27500</div>
+                        <p>ICC · Didgah TV · Manoto · 4Music · Confirm · Cine Series · Avang</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11324 V 29700</div>
+                        <p>iFilm HD · PMC HD · Barbara TV HD · Manoto +1/+2 · Fashion TV HD</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11387 H 27500</div>
+                        <p>BBC Persia HD · Manoto +1/+2</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11325 V 30000</div>
+                        <p>Barbara HD · PMC HD · Manoto · Cine Film</p>
+                    </article>
+
+                </div>
+            </details>
+
+            <!-- INTELSAT -->
+            <details class="sat-card">
+                <summary>
+                    <span class="sat-icon">🛰️</span>
+                    <span class="sat-name">
+                        <strong>Intelsat 902</strong>
+                        <small>اینتل‌ست</small>
+                    </span>
+                    <span class="sat-position">اطلاعات موقعیت نیازمند بررسی</span>
+                    <span class="arrow">⌄</span>
+                </summary>
+
+                <div class="frequency-list">
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11555 V 30000</div>
+                        <p>IRIB 1, 2, 3, 4 · IRINN</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11030 V 3500</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11002 V 3500</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">10989 V 1600</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                </div>
+            </details>
+
+            <!-- TURKSAT -->
+            <details class="sat-card">
+                <summary>
+                    <span class="sat-icon">🛰️</span>
+                    <span class="sat-name">
+                        <strong>Turksat</strong>
+                        <small>ترک‌ست</small>
+                    </span>
+                    <span class="sat-position">موقعیت نیازمند بررسی</span>
+                    <span class="arrow">⌄</span>
+                </summary>
+
+                <div class="frequency-list">
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11637 H 30000</div>
+                        <p>IRIB 1, 2, 3, 4 · Tehran</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11785 H 27500</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11977 H 27500</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">12329 H 6666</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">12015 H 27500</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">12356 H 7100</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">12245 H 27500</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                </div>
+            </details>
+
+            <!-- HOTBIRD -->
+            <details class="sat-card">
+                <summary>
+                    <span class="sat-icon">🛰️</span>
+                    <span class="sat-name">
+                        <strong>Hotbird 13°E</strong>
+                        <small>هاتبرد</small>
+                    </span>
+                    <span class="sat-position">13°E</span>
+                    <span class="arrow">⌄</span>
+                </summary>
+
+                <div class="frequency-list">
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">10775 H 30000</div>
+                        <p>IRINN · Quran · iFilm · Nasim · Jame Jam · Press TV</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">12322 H 27500</div>
+                        <p>BBC Persian · Iran International</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11137 H 27500</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">12226 V 27500</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11373 H 27500</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11604 H 27500</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                    <article class="frequency-card">
+                        <div class="frequency-number">11471 V 27500</div>
+                        <p>اطلاعات شبکه ثبت نشده</p>
+                    </article>
+
+                </div>
+            </details>
+
+        </div>
+
+        <div id="emptyState" class="empty-state" hidden>
+            <span>🔎</span>
+            <h3>نتیجه‌ای پیدا نشد</h3>
+            <p>نام ماهواره، شبکه یا فرکانس را بررسی کن.</p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-logo">SAT<span>INFO</span></div>
+    <p>راهنمای فرکانس ماهواره‌ها</p>
+    <small>اطلاعات فرکانس‌ها ممکن است تغییر کنند.</small>
+</footer>
+
+</body>
+</html>
