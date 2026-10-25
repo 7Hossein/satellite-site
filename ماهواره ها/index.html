@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="اطلاعات ماهواره‌ای SAT INFO؛ یاه‌ست، بدر، یوتل‌ست ۷ درجه و هاتبرد">
+  <title>SAT INFO | اطلاعات ماهواره‌ها</title>
+  <link rel="stylesheet" href="satsat.css">
+  <script src="satsat.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="SAT INFO صفحه اصلی">
+      <span class="brand-mark">SAT</span>
+      <span><strong>SAT INFO</strong><small>اطلاعات ماهواره‌ای</small></span>
+    </a>
+    <span class="live-note"><span class="dot"></span> راهنمای فرکانس‌ها</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">ماهواره‌های منتخب · ایران و خاورمیانه</p>
+      <h1>فرکانس‌ها را <span></span> پیدا کن</h1>
+      <p class="hero-copy">فهرست چهار موقعیت ماهواره‌ای منتخب، با پیوند مستقیم به منابع به‌روزرسانی فرکانس‌ها. اطلاعات تأییدنشده به‌عنوان فرکانس فعال نمایش داده نمی‌شوند.</p>
+      <div class="stats">
+        <div class="stat"><strong id="satelliteCount">4</strong><span>ماهواره</span></div>
+        <div class="stat"><strong id="frequencyCount">—</strong><span>فرکانس تأییدشده در این صفحه</span></div>
+        <div class="stat"><strong>FTA + Pay TV</strong><span>رایگان و کدگذاری‌شده</span></div>
+      </div>
+    </section>
+
+    <section class="tools" aria-label="جست‌وجو و فیلتر">
+      <label class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <input id="search" type="search" placeholder="جست‌وجوی نام ماهواره یا موقعیت..." autocomplete="off">
+      </label>
+      <div class="filter-row">
+        <label for="coverageFilter">پوشش</label>
+        <select id="coverageFilter">
+          <option value="all">همه اطلاعات</option>
+          <option value="mena">ایران و خاورمیانه (MENA)</option>
+          <option value="europe">اروپا</option>
+        </select>
+        <label for="statusFilter">وضعیت داده</label>
+        <select id="statusFilter">
+          <option value="all">همه وضعیت‌ها</option>
+          <option value="verified">دارای منبع بیرونی</option>
+          <option value="pending">نیازمند بررسی محلی</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="section-heading">
+      <div><p class="eyebrow">SATELLITE DIRECTORY</p><h2>ماهواره‌ها</h2></div>
+      <p class="section-note">برای دیدن جدول کامل فرکانس‌ها، منبع هر ماهواره را باز کن.</p>
+    </section>
+
+    <section id="satelliteGrid" class="satellite-grid" aria-live="polite">
+      <article class="sat-card" data-name="yahsat yah sat یاهست یاه‌ست 52.5 شرق" data-position="52.5°E" data-coverage="mena" data-status="verified">
+        <div class="card-top"><span class="sat-icon">Y</span><span class="position">52.5°E</span></div>
+        <h3>Yahsat <span>یاه‌ست</span></h3>
+        <p class="sat-description">Al Yah 1 · موقعیت مداری ۵۲٫۵ درجه شرقی</p>
+        <div class="meta"><span class="meta-label">پوشش هدف</span><span>خاورمیانه / MENA</span></div>
+        <div class="data-note"><span class="status-dot"></span><span>فهرست فرکانس‌ها در منبع بیرونی قابل بررسی است؛ فرکانس فعال در این صفحه تأیید نشده.</span></div>
+        <a class="source-link" href="https://en.kingofsat.tv/freqs.php?lim=0&ordre=sid&pos=52.5E&standard=All" target="_blank" rel="noopener noreferrer">مشاهده فرکانس‌ها در KingOfSat <span>↗</span></a>
+      </article>
+
+      <article class="sat-card" data-name="badr badr 8 arabsat بدر عربست 26 شرق" data-position="26°E" data-coverage="mena" data-status="verified">
+        <div class="card-top"><span class="sat-icon">B</span><span class="position">26°E</span></div>
+        <h3>Badr <span>بدر</span></h3>
+        <p class="sat-description">Badr 7 / Badr 8 · موقعیت مداری ۲۶ درجه شرقی</p>
+        <div class="meta"><span class="meta-label">پوشش هدف</span><span>خاورمیانه / MENA</span></div>
+        <div class="data-note"><span class="status-dot"></span><span>چند ماهواره در این موقعیت مداری فعالیت دارند؛ هر فرکانس باید با نام ماهواره و پوشش بررسی شود.</span></div>
+        <a class="source-link" href="https://en.kingofsat.fr/data-26E" target="_blank" rel="noopener noreferrer">مشاهده فرکانس‌ها در KingOfSat <span>↗</span></a>
+      </article>
+
+      <article class="sat-card" data-name="eutelsat eutelsat 7c یوتلست یوتل‌ست 7 شرق" data-position="7°E" data-coverage="mena" data-status="verified">
+        <div class="card-top"><span class="sat-icon">E7</span><span class="position">7°E</span></div>
+        <h3>Eutelsat 7°E <span>یوتل‌ست ۷ درجه</span></h3>
+        <p class="sat-description">Eutelsat 7C · موقعیت مداری ۷ درجه شرقی</p>
+        <div class="meta"><span class="meta-label">پوشش هدف</span><span>بسته به بیم، متفاوت</span></div>
+        <div class="data-note"><span class="status-dot"></span><span>پوشش هر ترانسپاندر می‌تواند متفاوت باشد؛ همه فرکانس‌ها لزوماً در ایران قابل دریافت نیستند.</span></div>
+        <a class="source-link" href="https://en.kingofsat.tv/tv-7E" target="_blank" rel="noopener noreferrer">مشاهده فرکانس‌ها در KingOfSat <span>↗</span></a>
+      </article>
+
+      <article class="sat-card" data-name="hotbird hot bird هاتبرد 13 شرق 13e" data-position="13°E" data-coverage="europe" data-status="verified">
+        <div class="card-top"><span class="sat-icon">H</span><span class="position">13°E</span></div>
+        <h3>Hotbird <span>هاتبرد</span></h3>
+        <p class="sat-description">Hot Bird 13F / 13G · موقعیت مداری ۱۳ درجه شرقی</p>
+        <div class="meta"><span class="meta-label">پوشش هدف</span><span>اروپا و نواحی مجاور</span></div>
+        <div class="data-note"><span class="status-dot"></span><span>قابلیت دریافت در ایران به پوشش بیم، قطر دیش و شرایط محل نصب بستگی دارد.</span></div>
+        <a class="source-link" href="https://en.kingofsat.tv/data-13E" target="_blank" rel="noopener noreferrer">مشاهده فرکانس‌ها در KingOfSat <span>↗</span></a>
+      </article>
+    </section>
+
+    <section id="emptyState" class="empty-state" hidden>
+      <strong>موردی پیدا نشد</strong>
+      <p>عبارت جست‌وجو یا فیلتر را تغییر بده.</p>
+    </section>
+
+    <section class="important-note">
+      <span class="note-icon">i</span>
+      <div>
+        <h2>درباره دقت اطلاعات</h2>
+        <p>این صفحه در حال حاضر فهرست ماهواره‌ها و پیوند منابع را نشان می‌دهد؛ عمداً هیچ فرکانسی را بدون تأیید مستقل به‌عنوان فعال فهرست نکرده‌ایم. وضعیت فرکانس‌ها، نام شبکه، پارامترهای SR/FEC و کدگذاری ممکن است تغییر کند. منبع بیرونی نیز ممکن است تأخیر یا خطا داشته باشد؛ قبل از تنظیم گیرنده، تاریخ به‌روزرسانی و پوشش منطقه را بررسی کن.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© SAT INFO</span>
+    <span>اطلاعات مرجع · بررسی منبع پیش از تنظیم گیرنده ضروری است</span>
+  </footer>
+</body>
+</html>
